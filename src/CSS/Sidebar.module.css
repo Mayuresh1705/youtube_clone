@@ -1,0 +1,27 @@
+.section{
+    width:220px;
+    height:100%;
+    overflow-y:auto;
+    border-right:1px solid #ddd;
+    transition:.3s;
+    padding:10px;
+    flex-shrink:0;
+}
+
+.sidebar{
+    width:70px;
+}
+
+.sidebar span{
+    display:none;
+}
+
+.home,
+.subscription,
+.you{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:15px 5px;
+    border-bottom:1px solid #ddd;
+}
