@@ -1,14 +1,10 @@
-import { Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home";
-import Watch from "./Pages/Watch";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.jsx";
 
-function App() {
-  return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/watch/:id" element={<Watch />} />
-    </Routes>
-  );
-}
-
-export default App;
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
